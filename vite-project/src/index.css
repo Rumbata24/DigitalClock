@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("./assets/background-img.jpg") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 15rem;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  padding: 2rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 880px) {
+  .clock {
+    font-size: 10rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  .clock {
+    font-size: 8rem;
+    text-align: center;
+  }
+}
